@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_backgoround6"
+            android:fontFamily="@font/sebang_gothic"
+            android:gravity="center"
+            android:text="수학과 18학번 과 채팅방"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="637dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="16dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#424242"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@null"
+            android:backgroundTint="@null"
+            android:src="@drawable/icon_folder2" />
+
+        <EditText
+            android:id="@+id/EditText_chat"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@+id/image_btn"
+            android:background="@drawable/btn_backgoround4"
+            android:fontFamily="@font/sebang_gothic"
+            android:hint="내용을 입력하세요."
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="#b9bcce"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/Button_send"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/btn_backgoround2"
+            android:text="전송"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/sebang_gothic"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:gravity="center"
+    tools:context="com.secrettalk.LoginActivity">
+    <!--액티비티 적힌거 컨트롤 클릭하면 들어가짐-->
+    <ImageView
+        android:id="@+id/ImageView_secrettalk"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center|top"
+        android:src="@drawable/icon_mainlogo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="15sp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:text="ID"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                app:layout_constraintEnd_toStartOf="@+id/et_log_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:text="PW"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                app:layout_constraintEnd_toStartOf="@+id/et_log_password"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/et_log_id"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <EditText
+                android:id="@+id/et_log_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:ems="10"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/et_log_id"
+                app:layout_constraintStart_toStartOf="@+id/et_log_id"
+                app:layout_constraintTop_toBottomOf="@+id/et_log_id" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btn_log_findid"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:text="ID 찾기"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/btn_log_findpw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_log_password" />
+        <Button
+            android:id="@+id/btn_log_findpw"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/black"
+            android:text="Password 찾기"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_log_findid"
+            app:layout_constraintTop_toBottomOf="@+id/et_log_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="300dp"
+            android:background="@drawable/btn_backgoround2"
+            android:gravity="center"
+            android:text=" 로 그 인 "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_reg_register"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_reg_register"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginBottom="300dp"
+            android:background="@drawable/btn_backgoround2"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text=" 회 원 가 입 "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_login" />
+
+    </LinearLayout>
+    </LinearLayout>

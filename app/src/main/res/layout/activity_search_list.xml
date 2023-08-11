@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ImageView_secrettalk"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_gravity="center|top"
+        android:src="@drawable/icon_mainlogo" />
+    <TextView
+        android:id="@+id/imageView2"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="채팅방 검색"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sebang_gothic_bold"
+        android:textSize="22sp">
+    </TextView>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_backgoround5"
+        android:hint="채팅방을 검색하시오."
+        android:textColorHint="@color/white"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F6"
+        android:scrollbars="vertical"
+        android:scrollbarSize="5dp"
+        android:layout_marginBottom="10dp">
+    </ListView>
+</LinearLayout>

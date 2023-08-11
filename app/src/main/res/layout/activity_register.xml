@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.secrettalk.RegisterActivity">
+    <ImageView
+        android:id="@+id/ImageView_secrettalk"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center|top"
+        android:src="@drawable/icon_mainlogo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="15sp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="이름"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ID"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Password"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Password 확인"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="단과대학"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="학과"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="학번"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="휴대폰 번호"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="이메일 주소"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="성별"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="닉네임"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sebang_gothic_bold"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15sp">
+            <EditText
+                android:id="@+id/et_reg_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="이름을 입력하세요"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:backgroundTint="@color/white"/>
+            <EditText
+                android:id="@+id/et_reg_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="아이디를 입력하세요"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="TouchTargetSizeCheck"
+                android:backgroundTint="@color/white"/>
+            <EditText
+                android:id="@+id/et_reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="비밀번호를 입력하세요"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/et_reg_id"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/et_reg_id"
+                app:layout_constraintTop_toBottomOf="@+id/et_reg_id"
+                tools:ignore="TouchTargetSizeCheck"
+                android:backgroundTint="@color/white"/>
+            <EditText
+                android:id="@+id/et_reg_password2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="비밀번호를 다시 입력하세요"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/et_reg_password"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/et_reg_password"
+                app:layout_constraintTop_toBottomOf="@+id/et_reg_password"
+                tools:ignore="TouchTargetSizeCheck"
+                android:backgroundTint="@color/white"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/tv_reg_college"
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:text="소속 단과대학을 선택하세요"
+                    android:fontFamily="@font/sebang_gothic"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_backgoround"
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_reg_collge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="선택"
+                    android:fontFamily="@font/sebang_gothic"
+
+                    android:layout_margin="1dp"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="@+id/et_reg_password2"
+                    app:layout_constraintStart_toStartOf="@+id/et_reg_password2"
+                    app:layout_constraintTop_toBottomOf="@+id/et_reg_password2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/tv_reg_dept"
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sebang_gothic"
+                    android:text="소속 학과를 선택하세요"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_reg_dept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/btn_backgoround"
+                    android:fontFamily="@font/sebang_gothic"
+                    android:gravity="center"
+                    android:text="선택"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_reg_studentid"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="학번을 입력하세요"
+                android:inputType="text"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_reg_dept"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/btn_reg_dept"
+                app:layout_constraintTop_toBottomOf="@+id/btn_reg_dept"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_reg_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="휴대폰 번호를 입력하세요"
+                android:inputType="text"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/et_reg_studentid"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/et_reg_studentid"
+                app:layout_constraintTop_toBottomOf="@+id/et_reg_studentid"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/et_reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="이메일을 입력하세요"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/et_reg_phonenumber"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/et_reg_phonenumber"
+                app:layout_constraintTop_toBottomOf="@+id/et_reg_phonenumber"
+                tools:ignore="TouchTargetSizeCheck" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/tv_reg_gender"
+                    android:layout_width="194dp"
+                    android:layout_height="wrap_content"
+                    android:text="성별을 선택하세요"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sebang_gothic"
+                    android:layout_gravity="center"/>
+                <Button
+                    android:id="@+id/btn_reg_gender"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_backgoround"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="선택"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sebang_gothic"
+
+                    app:layout_constraintEnd_toEndOf="@+id/et_reg_email"
+                    app:layout_constraintStart_toStartOf="@+id/et_reg_email"
+                    app:layout_constraintTop_toBottomOf="@+id/et_reg_email" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/et_reg_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="닉네임을 입력하세요"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/btn_reg_gender"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/btn_reg_gender"
+                app:layout_constraintTop_toBottomOf="@+id/btn_reg_gender"
+                tools:ignore="TouchTargetSizeCheck"
+                android:backgroundTint="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_reg_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="     회 원 가 입 하 기    "
+        android:background="@drawable/btn_backgoround2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:fontFamily="@font/sebang_gothic_otf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "2582030807",
+    "project_id": "secret-talk-52652",
+    "storage_bucket": "secret-talk-52652.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2582030807:android:271e583e679fc2a8868392",
+        "android_client_info": {
+          "package_name": "com.secrettalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2582030807-99i7fqc04l0l1vqqgsg3pcgvgh7nq547.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAL8V9y_Dn9I9JwsqfZkJnncdcHC-m9XtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2582030807-99i7fqc04l0l1vqqgsg3pcgvgh7nq547.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

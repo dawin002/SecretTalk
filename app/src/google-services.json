@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "736194752306",
+    "project_id": "test-dcce8",
+    "storage_bucket": "test-dcce8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736194752306:android:52719e53b7728b8790b12b",
+        "android_client_info": {
+          "package_name": "com.secrettalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736194752306-vs0fvqheqv34tgl1lds9dh36lnfis5tg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUo9Wo3AAQP4FE1ixfl-FiXeJ1u3Ma0oE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736194752306-vs0fvqheqv34tgl1lds9dh36lnfis5tg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

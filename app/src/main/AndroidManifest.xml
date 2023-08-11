@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.secrettalk">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    //갤러리 접근 권한
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Secrettalk">
+        <activity android:name=".ProfilePopupActivity"
+            android:theme="@android:style/Theme.Dialog"/>
+<!--        <activity android:name="PushActivity"/>-->
+        <activity
+            android:name=".StartPageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClubListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CMajorChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindPwActivity"/>
+        <activity
+            android:name=".FindIdActivity"/>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".MyChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"/>
+        <activity
+            android:name=".SMajorChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UniversityListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewChatSearch"
+            android:exported="false" />
+        <activity
+            android:name=".UserActivity" />
+        <activity
+            android:name=".SchoolCertification" />
+        <activity
+            android:name="User"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+    </application>
+    <uses-permission android:name="android.permisson.INTERNET"
+        tools:ignore="ManifestOrder" />
+</manifest>

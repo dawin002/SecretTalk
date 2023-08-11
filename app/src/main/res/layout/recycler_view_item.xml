@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/black">
+    <TextView
+        android:id="@+id/chatName"
+        android:layout_width="177dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:background="@color/black"
+        android:text="수학과 18학번 과 채팅방"
+        android:fontFamily="@font/sebang_gothic"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="127dp"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/outBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#F5F5F6"
+        android:text="나가기"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sebang_gothic" />
+</LinearLayout>
